@@ -1,0 +1,187 @@
+/*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(248, 247, 247);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.img-container {
+    position: relative;
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);  
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.photo-credit a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: my-norse-font;
+    src: url(./norse/Norse.otf);
+    font-weight: normal;
+}
+
+font-face {
+    font-family: my-norse-font;
+    src: url(./norse/Norsebold.otf);
+    font-weight: bold;
+}
+
+.logo{
+    color: white;
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    transform: translateX(-50%);  
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 50px;
+    font-family: my-norse-font, sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex: 1;
+    max-width: 650px;
+    font-size: 20px;
+}
+
+.sub-intro {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.intro{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.second-txt{
+    margin-bottom: 10px;
+}
+
+.second-part{
+    font-weight: bold;
+    background-color: white;
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
