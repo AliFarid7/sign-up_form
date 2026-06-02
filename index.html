@@ -21,34 +21,50 @@
         </div>
     </div>
     <div class="container">
-        <div class="intro">This is not a real online service! You know you need something like this in your life to help
-            you realize your deepest dreams. Sign up now to get started.</div>
-        <div class="sub-intro">You know you want to.</div>
+        <div class="first-part">
+            <div class="intro">This is not a real online service! You know you need something like this in your life to
+                help
+                you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+            <div class="sub-intro">You <em>know</em> you want to.</div>
+        </div>
         <div class="second-part">
             <div class="second-txt">Let's do this!</div>
-            <fieldset>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name">
-
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name">
-
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
-
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="number" id="phone_number" name="phone_number">
-
-                <label for="pasword">PASSWORD</label>
-                <input type="password" id="password" name="password">
-
-                <label for="confirm_password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm_password" name="confirm_password">
-            </fieldset>
+            <form action="/action-store" method="post">
+                <fieldset>
+                    <div>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="number" id="phone_number" name="phone_number">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </div>
+                </fieldset>
+            </form>
         </div>
-        <div>
-            <button>Create an Account</button>
-            <div>Already have an account? Log in</div>
+        <div class="third-part">
+            <button type="submit">Create an Account</button>
+            <div>Already have an account? <em>Log In</em></div>
         </div>
     </div>
 </body>

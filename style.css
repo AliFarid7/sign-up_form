@@ -24,7 +24,6 @@ body {
     -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: row;
-    background-color: rgb(248, 247, 247);
 }
 
 img,
@@ -81,7 +80,7 @@ h6 {
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translateX(-50%);  
+    transform: translateX(-50%);
     color: white;
     font-size: 12px;
     text-align: center;
@@ -99,18 +98,18 @@ h6 {
     font-weight: normal;
 }
 
-font-face {
+@font-face {
     font-family: my-norse-font;
     src: url(./norse/Norsebold.otf);
     font-weight: bold;
 }
 
-.logo{
+.logo {
     color: white;
     position: absolute;
     bottom: 500px;
     left: 50%;
-    transform: translateX(-50%);  
+    transform: translateX(-50%);
     font-size: 12px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -131,57 +130,80 @@ font-face {
     font-weight: bold;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: flex-start;
     flex: 1;
-    max-width: 650px;
     font-size: 20px;
+    min-height: 100vh;
+    background-color: #fff;
 }
 
+.first-part {
+    padding: 100px 60px 40px 35px;
+    font-weight: bold;
+    background-color: rgb(251, 251, 251);
+}
+
+.intro,
 .sub-intro {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    padding-bottom: 30px;
-}
-
-.intro{
-    font-weight: bold;
-    padding-bottom: 30px;
-}
-
-.second-txt{
     margin-bottom: 10px;
-}
-
-.second-part{
-    font-weight: bold;
-    background-color: white;
+    max-width: 550px;
 }
 
 fieldset {
     border: none;
-    margin-top: 20px;
     display: flex;
-    /* flex-direction: column; */
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    font-size: 12px;
-    letter-spacing: 1.5px;
     text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border: 0.5px solid;
+    border-radius: 4px;
+    padding: 1px 1px;
+    width: 250px;
+}
+
+.second-part .second-txt {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.second-part {
+    padding: 0px 60px 40px 35px;
+}
+
+button{
+    color: #fffffffc;
+    background-color: rgba(117, 117, 125);
+}
+
+.third-part{
+    background-color: rgb(251, 251, 251);
+    padding-left: 40px;
     font-weight: bold;
 }
 
-input {
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+.third-part button{
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 40px;
+}
+
+.third-part em{
+    color: red;
 }
