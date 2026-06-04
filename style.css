@@ -170,7 +170,7 @@ label {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input{
+input {
     border: 0.5px solid;
     border-radius: 4px;
     padding: 1px 1px;
@@ -186,24 +186,36 @@ input{
     padding: 0px 60px 40px 35px;
 }
 
-button{
+button {
     color: #fffffffc;
     background-color: rgba(117, 117, 125);
 }
 
-.third-part{
+.third-part {
     background-color: rgb(251, 251, 251);
     padding-left: 40px;
     font-weight: bold;
 }
 
-.third-part button{
+.third-part button {
     margin-bottom: 20px;
     font-weight: bold;
     border-radius: 5px;
     padding: 5px 40px;
 }
 
-.third-part em{
+.third-part em {
     color: red;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-valid {
+    border-color: green;
+}
+
+input:focus{
+    border-color: blue;
 }
