@@ -204,8 +204,13 @@ button {
     padding: 5px 40px;
 }
 
-.third-part em {
+.third-part a {
+    text-decoration: none;
     color: red;
+}
+
+input{
+    border-color: #E5E7EB;
 }
 
 input:user-invalid {
@@ -218,4 +223,5 @@ input:user-valid {
 
 input:focus{
     border-color: blue;
+    box-shadow: 0 0 4px rgba(0, 0, 255, 0.3);
 }
