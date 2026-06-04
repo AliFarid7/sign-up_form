@@ -27,9 +27,9 @@
                 you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
             <div class="sub-intro">You <em>know</em> you want to.</div>
         </div>
-        <div class="second-part">
-            <div class="second-txt">Let's do this!</div>
-            <form action="/action-store" method="post">
+        <form action="/action-store" method="post">
+            <div class="second-part">
+                <div class="second-txt">Let's do this!</div>
                 <fieldset>
                     <div>
                         <label for="first_name">First Name</label>
@@ -47,24 +47,28 @@
                     </div>
                     <div>
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" id="phone_number" name="phone_number" required pattern="^01[0-2,5]{1}[0-9]{8}$">
+                        <input type="tel" id="phone_number" name="phone_number" required pattern="^01[0125][0-9]{8}$">
                     </div>
                 </fieldset>
                 <fieldset>
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password" required maxlength="60" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$" title="Must be at least 8 characters and include an uppercase letter, lowercase letter, number, and special character">
+                        <input type="password" id="password" name="password" required maxlength="60"
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$"
+                            title="Must be at least 8 characters and include an uppercase letter, lowercase letter, number, and special character">
                     </div>
                     <div>
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password" name="confirm_password" required maxlength="60" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$" title="Must be at least 8 characters and include an uppercase letter, lowercase letter, number, and special character">
+                        <input type="password" id="confirm_password" name="confirm_password" required maxlength="60"
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$"
+                            title="Must be at least 8 characters and include an uppercase letter, lowercase letter, number, and special character">
                     </div>
                 </fieldset>
-        </div>
-        <div class="third-part">
-            <button type="submit">Create an Account</button>
-            <div>Already have an account? <a href="">Log in</a></div>
-        </div>
+            </div>
+            <div class="third-part">
+                <button type="submit">Create an Account</button>
+                <div>Already have an account? <a href="">Log in</a></div>
+            </div>
         </form>
     </div>
 </body>
